@@ -10,19 +10,6 @@
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(() => {
-        $.ajax({
-          method: 'GET',
-          url: 'https://jsonplaceholder.typicode.com/todos',
-          dataType: 'json',
-        }).done(function (data) {
-          console.log(data);
-          $(data).each(function (index, item) {
-            $('ul').append('<li>' + item.completed + '</li>');
-          });
-        });
-      });
-    </script>
+    <script src="jquery.js"></script>
   </body>
 </html>
